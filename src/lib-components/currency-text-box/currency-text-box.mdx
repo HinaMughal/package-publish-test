@@ -1,0 +1,49 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { CurrencyTextBox } from "./currency-text-box";
+
+# `Currency text box`
+
+This textfieled will be used to display the Currency.
+
+## Validation
+
+1. This field is required.
+2. Get data from DB and display in the field.
+3. DataType is AlphaNumericSpecial.
+4. Maximum Length is 25. (20 for name and 5 for code)
+
+## Attributes of Currency text box
+
+Below is the list of Attributes.
+
+<ArgsTable of={CurrencyTextBox} />{" "}
+
+## Events Description
+
+### CurrencyTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### CurrencyTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### CurrencyTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### CurrencyTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### CurrencyTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+
+### Demo
+
+<Canvas>
+  <Story id="currencytextbox--primary" />
+</Canvas>

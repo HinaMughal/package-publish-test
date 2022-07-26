@@ -1,0 +1,47 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { TotalAmountTextBox } from './total-amount-text-box';
+
+# `Total Amount text box`
+
+Total Amount is a Text Box Component that calculates the total sum of amount
+
+## Validation 
+- Max Field length set 18.
+- Restricted to 2 decimal.
+- Field is numeric
+
+## Attributes of Total Amount text box
+Below is the list of Attributes.
+<ArgsTable of={ TotalAmountTextBox } /> 
+
+## Events Description
+Note:
+#
+`1. None of events will occur if component is disabled`
+### TotalAmountTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### TotalAmountTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### TotalAmountTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### TotalAmountTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### TotalAmountTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="totalamounttextbox--primary" />
+</Canvas>
+
+ 

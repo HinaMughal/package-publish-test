@@ -1,0 +1,40 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { StatusDropDown } from './status-drop-down';
+
+# `Status drop down`
+
+This Component is used to select the `Status` and only display if isDisabled = true
+
+## Validation 
+- This field is mandatory
+
+## Attributes of Status drop down
+Below is the list of Attributes.
+<ArgsTable of={ StatusDropDown } /> 
+
+## Events Description
+
+### StatusDropDown-onChange
+
+This event is used to get selected value from DropDown
+
+### StatusDropDown-onClick
+
+This event is used to get value on click
+
+### StatusDropDown-onBlur
+
+This event are not being used at the moment
+
+### StatusDropDown-onFocus
+
+This event are not being used at the moment
+
+### Demo
+
+<Canvas>
+<Story id="statusdropdown--primary" />
+</Canvas>
+
+ 

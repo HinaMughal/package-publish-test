@@ -1,0 +1,46 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { AuthorizedByTextBox } from './authorized-by-text-box';
+
+# `Authorized by text box`
+This textbox is used to display Authorized By.
+ 
+
+## Validation 
+1. It is Required.
+2. Data coming from DB.
+3. Max Length is 10.
+4. DataType is AlphabetOnly.
+
+## Attributes of Authorized by text box
+Below is the list of Attributes.
+<ArgsTable of={ AuthorizedByTextBox } /> 
+
+## Events Description
+
+### AuthorizedByTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### AuthorizedByTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### AuthorizedByTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### AuthorizedByTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### AuthorizedByTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="authorizedbytextbox--primary" />
+</Canvas>
+
+ 

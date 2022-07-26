@@ -1,0 +1,47 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { BatchNumberTextBox } from './batch-number-text-box';
+
+# `Batch number text box`
+
+ 
+ Batch number text box is a component which is used to set Batch Number
+
+## Validation 
+1. Field is required.
+2. DataType is numeric.
+3. MaxLength is 4.
+
+
+## Attributes of Batch number text box
+Below is the list of Attributes.
+<ArgsTable of={ BatchNumberTextBox } /> 
+
+## Events Description
+
+### BatchNumberTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### BatchNumberTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### BatchNumberTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### BatchNumberTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### BatchNumberTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="batchnumbertextbox--primary" />
+</Canvas>
+
+ 

@@ -1,0 +1,46 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { CustomerCategoryTextBox } from './customer-category-text-box';
+
+# `Customer category text box`
+
+Customer Category is a text box component referring to the type of customer at the time of account opening.
+
+## Validation 
+- Field is mandatory
+- Field is left aligned
+- Field is alphaSpecial
+- Maximum length is 30
+
+## Attributes of Customer category text box
+Below is the list of Attributes.
+<ArgsTable of={ CustomerCategoryTextBox } /> 
+
+## Events Description
+
+### CustomerCategoryTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### CustomerCategoryTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### CustomerCategoryTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### CustomerCategoryTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### CustomerCategoryTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="customercategorytextbox--primary" />
+</Canvas>
+
+ 

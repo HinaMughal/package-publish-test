@@ -1,0 +1,46 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { NarrationTextBox } from './narration-text-box';
+
+# `Narration text box`
+
+Narration is a text box component that defines detailed descriptions for financial transactions to be used for reporting purpose.
+
+## Validation 
+- Field is Editable
+- Field is Non Mandatory
+- Text input is left Aligned
+- Maximum Data length is 15
+
+## Attributes of Narration text box
+Below is the list of Attributes.
+<ArgsTable of={ NarrationTextBox } /> 
+
+## Events Description
+
+### NarrationTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### NarrationTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### NarrationTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### NarrationTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### NarrationTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="narrationtextbox--primary" />
+</Canvas>
+
+ 

@@ -1,0 +1,47 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { EnterTransactionAmountTextBox } from './enter-transaction-amount-text-box';
+
+# `Enter transaction amount text box`
+
+ 
+This text box is used to enter transaction amount text box
+
+## Validation 
+- This field is mandatory
+- Max Field length set 18.
+- Restricted to 2 Decimal.
+- DataType is numericDecimal
+
+## Attributes of Enter transaction amount text box
+Below is the list of Attributes.
+<ArgsTable of={ EnterTransactionAmountTextBox } /> 
+
+## Events Description
+
+### EnterTransactionAmountTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### EnterTransactionAmountTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### EnterTransactionAmountTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### EnterTransactionAmountTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### EnterTransactionAmountTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="entertransactionamounttextbox--primary" />
+</Canvas>
+
+ 

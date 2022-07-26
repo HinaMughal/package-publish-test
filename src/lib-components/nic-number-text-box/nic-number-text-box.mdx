@@ -1,0 +1,45 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { NicNumberTextBox } from './nic-number-text-box';
+
+# `Nic Number text box`
+
+CNIC is a Text Box Component on a fixed format that defines old National identity card number
+
+## Validation 
+- Field length is 15
+- Format (###-##-######)
+- Field data type is numericSpecial
+
+## Attributes of Nic Number text box
+Below is the list of Attributes.
+<ArgsTable of={ NicNumberTextBox } /> 
+
+## Events Description
+Note:  `None of events will occur if component is disabled`
+### NicNumberTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### NicNumberTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### NicNumberTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### NicNumberTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### NicNumberTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="nicnumbertextbox--primary" />
+</Canvas>
+
+ 

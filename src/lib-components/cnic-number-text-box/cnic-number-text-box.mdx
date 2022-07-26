@@ -1,0 +1,49 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { CnicNumberTextBox } from "./cnic-number-text-box";
+
+# `Cnic number text box`
+
+This text box is used to enter CNIC number.
+
+## Validation
+
+1. Field is mandatory.
+2. Length must be 15 chars (including Dashes)
+3. Masking format is xxxxx-xxxxxxx-x
+4. Datatype is NumericSpecial
+
+## Attributes of Cnic number text box
+
+Below is the list of Attributes.
+
+<ArgsTable of={CnicNumberTextBox} />{" "}
+
+## Events Description
+
+### CnicNumberTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### CnicNumberTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### CnicNumberTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### CnicNumberTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### CnicNumberTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+
+### Demo
+
+<Canvas>
+  <Story id="cnicnumbertextbox--primary" />
+</Canvas>

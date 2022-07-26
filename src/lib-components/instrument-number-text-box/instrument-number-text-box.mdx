@@ -1,0 +1,45 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { InstrumentNumberTextBox } from './instrument-number-text-box';
+
+# `Instrument Number text box`
+ 
+Instrument no is a Text Box Component and a number of the Cheque Book maintained for the Instrument Type. 
+
+## Validation 
+- Not just contains point(.)
+- Not contains (+ or -)
+- Field should be Numeric
+
+## Attributes of Instrument Number text box
+Below is the list of Attributes.
+<ArgsTable of={ InstrumentNumberTextBox } /> 
+
+## Events Description
+Note:  `None of events will occur if component is disabled`
+### InstrumentNumberTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### InstrumentNumberTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### InstrumentNumberTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### InstrumentNumberTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### InstrumentNumberTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="instrumentnumbertextbox--primary" />
+</Canvas>
+
+ 

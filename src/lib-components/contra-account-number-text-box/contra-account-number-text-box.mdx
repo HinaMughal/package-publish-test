@@ -1,0 +1,47 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { ContraAccountNumberTextBox } from './contra-account-number-text-box';
+
+# `Contra account number text box`
+ 
+Contra Account Number text box allows user to enter contra account number corresponding to a `GL Account`.
+
+## Validation 
+- Field is not mandatory
+- Field should be masked as (####-######-##-#)
+- Max length should be 16 (including dashes)
+
+## Attributes of Contra account number text box
+Below is the list of Attributes.
+<ArgsTable of={ ContraAccountNumberTextBox } /> 
+
+## Events Description
+
+Note: `None of events will occur when component is disabled`
+
+### ContraAccountNumberTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### ContraAccountNumberTextBox-onBlur
+
+This event are not being used at the moment
+
+### ContraAccountNumberTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### ContraAccountNumberTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### ContraAccountNumberTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="contraaccountnumbertextbox--primary" />
+</Canvas>
+
+ 

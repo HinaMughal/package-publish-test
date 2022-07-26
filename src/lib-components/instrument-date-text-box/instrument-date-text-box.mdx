@@ -1,0 +1,48 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { InstrumentDateTextBox } from './instrument-date-text-box';
+
+# `Instrument date text box`
+
+ 
+Field used to insert instrument date
+
+## Validation 
+- This field is mandatory
+- Max length is 10
+- Field is numeric
+- Masked as (  /  /    )
+- Format is DD/MM/YYYY
+
+## Attributes of Instrument date text box
+Below is the list of Attributes.
+<ArgsTable of={ InstrumentDateTextBox } /> 
+
+## Events Description
+
+### InstrumentDateTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### InstrumentDateTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### InstrumentDateTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### InstrumentDateTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### InstrumentDateTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="instrumentdatetextbox--primary" />
+</Canvas>
+
+ 

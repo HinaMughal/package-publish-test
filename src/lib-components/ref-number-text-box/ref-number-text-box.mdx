@@ -1,0 +1,46 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { RefNumberTextBox } from './ref-number-text-box';
+
+# `Ref number text box`
+
+Reference Number text box is used to enter the reference number.
+
+## Validation 
+- This field is mandatory
+- Max length is 10 Characters.
+
+## Attributes of Ref number text box
+Below is the list of Attributes.
+<ArgsTable of={ RefNumberTextBox } /> 
+
+## Events Description
+
+Note: `None of events will occur when component is disabled`
+
+### RefNumberTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### RefNumberTextBox-onBlur
+
+This event are not being used at the moment.
+
+### RefNumberTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### RefNumberTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### RefNumberTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="refnumbertextbox--primary" />
+</Canvas>
+
+ 

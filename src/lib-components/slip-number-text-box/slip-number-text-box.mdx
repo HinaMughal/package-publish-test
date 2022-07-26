@@ -1,0 +1,44 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { SlipNumberTextBox } from './slip-number-text-box';
+
+# `Slip Number text box`
+
+Slip no is a Text Box Component is depositor slip number
+
+## Validation 
+- Maximum field length is 15
+- Field is numeric
+
+## Attributes of Slip Number text box
+Below is the list of Attributes.
+<ArgsTable of={ SlipNumberTextBox } /> 
+
+## Events Description
+
+### SlipNumberTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### SlipNumberTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### SlipNumberTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### SlipNumberTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### SlipNumberTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="slipnumbertextbox--primary" />
+</Canvas>
+
+ 

@@ -1,4 +1,4 @@
-name: Build and Test
+name: Build and Test 
 
 on:
   push:
@@ -7,21 +7,11 @@ on:
     branches: [main]
 
 jobs:
-  test:
+  buildcomponents:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Set up Python Environment
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-    - name: Install Dependencies
+    - name: Build components into Package
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        npm run build-library
   
-    - name: Run Tests
-      run: |
-        python manage.py test

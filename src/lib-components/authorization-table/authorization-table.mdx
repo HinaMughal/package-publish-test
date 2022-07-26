@@ -1,0 +1,27 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { AuthorizationTable } from './authorization-table';
+
+# `Authorization table`
+
+ 
+This is a table for viewing details before authorization
+
+
+## Attributes of Authorization table
+Below is the list of Attributes.
+<ArgsTable of={ AuthorizationTable } /> 
+
+## Events Description
+
+### AuthorizationTable-onCurrentRow
+
+The onCurrentRow event occurs when the user select any row of table
+
+### Demo
+
+<Canvas>
+<Story id="authorizationtable--primary" />
+</Canvas>
+
+ 

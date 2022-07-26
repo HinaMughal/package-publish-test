@@ -1,0 +1,48 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { PayingBranchTextBox } from "./paying-branch-text-box";
+
+# `Paying branch text box`
+
+Paying branch text box is a text box component indicating target branch for transaction
+
+## Validation
+
+- Field is alphanumericSpecial
+- Field is mandatory
+- Field is disabled
+
+## Attributes of Paying branch text box
+
+Below is the list of Attributes.
+
+<ArgsTable of={PayingBranchTextBox} />{" "}
+
+## Events Description
+
+### PayingBranchTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### PayingBranchTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### PayingBranchTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### PayingBranchTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### PayingBranchTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+
+### Demo
+
+<Canvas>
+  <Story id="payingbranchtextbox--primary" />
+</Canvas>

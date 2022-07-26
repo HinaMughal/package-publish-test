@@ -1,0 +1,40 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { CurrencyDropDown } from './currency-drop-down';
+
+# `Currency drop down`
+
+This Component is used to select `Currency` and only display if isDisabled = true
+
+## Validation 
+- This field is mandatory
+
+## Attributes of Currency drop down
+Below is the list of Attributes.
+<ArgsTable of={ CurrencyDropDown } /> 
+
+## Events Description
+
+### CurrencyDropDown-onChange
+
+This event is used to get selected value from DropDown
+
+### CurrencyDropDown-onClick
+
+This event is used to get value on click
+
+### CurrencyDropDown-onBlur
+
+This event are not being used at the moment
+
+### CurrencyDropDown-onFocus
+
+This event are not being used at the moment
+
+### Demo
+
+<Canvas>
+<Story id="currencydropdown--primary" />
+</Canvas>
+
+ 

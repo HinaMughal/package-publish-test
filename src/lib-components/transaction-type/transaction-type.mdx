@@ -1,0 +1,41 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { TransactionType } from './transaction-type';
+
+# `Transaction type`
+
+ 
+This Component is used to select `Transactiont type` and only display if isDisabled = true
+
+## Validation 
+- This field is mandatory
+
+## Attributes of Transaction type
+Below is the list of Attributes.
+<ArgsTable of={ TransactionType } /> 
+
+## Events Description
+
+### TransactionType-onChange
+
+This event is used to get selected value from DropDown
+
+### TransactionType-onClick
+
+This event is used to get value on click
+
+### TransactionType-onBlur
+
+This event are not being used at the moment
+
+### TransactionType-onFocus
+
+This event are not being used at the moment
+
+### Demo
+
+<Canvas>
+<Story id="transactiontype--primary" />
+</Canvas>
+
+ 

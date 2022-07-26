@@ -1,0 +1,48 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { TransactionStatusTextBox } from "./transaction-status-text-box";
+
+# `Transaction status text box`
+This text box is used to display Transaction Status.
+
+## Validation
+
+1.  Field is Disabled
+2.  Field is required. 
+3.  DataType is AlphabetOnly.
+
+
+## Attributes of Transaction status text box
+
+Below is the list of Attributes.
+
+<ArgsTable of={TransactionStatusTextBox} />{" "}
+
+## Events Description
+
+### TransactionStatusTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### TransactionStatusTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### TransactionStatusTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### TransactionStatusTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### TransactionStatusTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+
+### Demo
+
+<Canvas>
+  <Story id="transactionstatustextbox--primary" />
+</Canvas>

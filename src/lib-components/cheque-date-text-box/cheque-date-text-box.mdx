@@ -1,0 +1,50 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { ChequeDateTextBox } from "./cheque-date-text-box";
+
+# `Cheque date text box`
+
+This textbox is used to enter Cheque Date.
+
+## Validation
+
+1. Field is required.
+2. Fields length should not less than 8.
+3. Field is masked as ##/##/####
+4. DataType is Date
+5. Max Length is 10
+
+## Attributes of Cheque date text box
+
+Below is the list of Attributes.
+
+<ArgsTable of={ChequeDateTextBox} />{" "}
+
+## Events Description
+
+### ChequeDateTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### ChequeDateTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### ChequeDateTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### ChequeDateTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### ChequeDateTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+
+### Demo
+
+<Canvas>
+  <Story id="chequedatetextbox--primary" />
+</Canvas>

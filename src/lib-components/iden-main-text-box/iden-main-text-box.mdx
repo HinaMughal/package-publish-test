@@ -1,0 +1,48 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { IdenMainTextBox } from './iden-main-text-box';
+
+# `Iden main text box`
+
+ 
+Iden main is TexBox component that defines the identity for general ledger
+
+## Validation 
+- This field is mandatory
+- Length should be <= 4 & >0 
+- Field is masked as (" -   ")
+- Data length is 4
+- Field is disabled when Activity(comboBox) is selected as '000' 
+
+## Attributes of Iden main text box
+Below is the list of Attributes.
+<ArgsTable of={ IdenMainTextBox } /> 
+
+## Events Description
+
+### IdenMainTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### IdenMainTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### IdenMainTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### IdenMainTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### IdenMainTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="idenmaintextbox--primary" />
+</Canvas>
+
+ 

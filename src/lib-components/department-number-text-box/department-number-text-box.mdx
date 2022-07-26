@@ -1,0 +1,49 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { DepartmentNumberTextBox } from "./department-number-text-box";
+
+# `Department number text box`
+
+This text box is used to display Department Number.
+
+## Validation
+
+1.  Field is Disabled
+2.  Field is required.
+3.  DataType is AlphaNumericSpecial.
+4.  Max Length is 24.
+
+## Attributes of Department number text box
+
+Below is the list of Attributes.
+
+<ArgsTable of={DepartmentNumberTextBox} />{" "}
+
+## Events Description
+
+### DepartmentNumberTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### DepartmentNumberTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### DepartmentNumberTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### DepartmentNumberTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### DepartmentNumberTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+
+### Demo
+
+<Canvas>
+  <Story id="departmentnumbertextbox--primary" />
+</Canvas>

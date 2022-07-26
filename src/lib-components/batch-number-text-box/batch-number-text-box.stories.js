@@ -1,0 +1,40 @@
+
+import BatchNumberTextBox from './batch-number-text-box.vue';
+import CustomMDXDocumentation from './batch-number-text-box.mdx';
+import { action } from '@storybook/addon-actions'
+
+export default {
+  title: 'BatchNumberTextBox',
+  component:BatchNumberTextBox,
+  parameters: {
+    docs: {
+      page: CustomMDXDocumentation,
+    },
+  },
+};
+
+const Template = (args) => ({
+  // Components used in your story `template` are defined in the `components` object
+  components: { BatchNumberTextBox },
+  // The storybook `args` need to be mapped into the template through the `setup()` method
+  setup() {
+    return { args };
+  },
+  // And then the `args` are bound to your component with `v-bind="args"`
+template: '<el-form><batch-number-text-box v-bind="args" @BatchNumberTextBox-onChange="onChange" @BatchNumberTextBox-onBlur="onBlur" @BatchNumberTextBox-onFocus="onFocus" @BatchNumberTextBox-onKeyPress="onKeyPress" @BatchNumberTextBox-onKeyUp="onKeyUp" /> </el-form>',
+  methods: {
+    onChange: action("onChange"),
+    onBlur: action("onBlur"),
+    onFocus: action("onFocus"),
+    onKeyPress: action("onKeyPress"),
+    onKeyUp: action("onKeyUp"),
+  }
+
+});
+
+export const Primary = Template.bind({});
+Primary.args = { name: 'Batch' };
+
+
+Primary.storyName = 'batch_number_text_box';
+

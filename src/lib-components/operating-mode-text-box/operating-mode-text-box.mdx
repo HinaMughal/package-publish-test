@@ -1,0 +1,47 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { OperatingModeTextBox } from './operating-mode-text-box';
+
+# `Operating mode text box`
+
+Operating Mode is text field component which details the account mode of operations for signing authorities.
+
+## Validation 
+- This field is mandatory
+- Field is alphabetOnly
+- Field is Disabled 
+- Maximum Length is 2
+- Field is left aligned
+
+## Attributes of Operating mode text box
+Below is the list of Attributes.
+<ArgsTable of={ OperatingModeTextBox } /> 
+
+## Events Description
+
+### OperatingModeTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### OperatingModeTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### OperatingModeTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### OperatingModeTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### OperatingModeTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="operatingmodetextbox--primary" />
+</Canvas>
+
+ 

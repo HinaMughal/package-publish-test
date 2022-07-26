@@ -1,0 +1,40 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { BranchDropDown } from './branch-drop-down';
+
+# `Branch drop down`
+
+This component is used to select `Branch` and only display if isDisabled = true
+
+## Validation 
+- This field is mandatory
+
+## Attributes of Branch drop down
+Below is the list of Attributes.
+<ArgsTable of={ BranchDropDown } /> 
+
+## Events Description
+
+### BranchDropDown-onChange
+
+This event is used to get selected value from DropDown
+
+### BranchDropDown-onClick
+
+This event is used to get value on click
+
+### BranchDropDown-onBlur
+
+This event are not being used at the moment
+
+### BranchDropDown-onFocus
+
+This event are not being used at the moment
+
+### Demo
+
+<Canvas>
+<Story id="branchdropdown--primary" />
+</Canvas>
+
+ 

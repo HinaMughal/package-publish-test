@@ -1,0 +1,37 @@
+import FedAmountTextBox from "./fed-amount-text-box.vue";
+import CustomMDXDocumentation from "./fed-amount-text-box.mdx";
+import { action } from "@storybook/addon-actions";
+
+export default {
+  title: "FedAmountTextBox",
+  component: FedAmountTextBox,
+  parameters: {
+    docs: {
+      page: CustomMDXDocumentation,
+    },
+  },
+};
+
+const Template = (args) => ({
+  // Components used in your story `template` are defined in the `components` object
+  components: { FedAmountTextBox },
+  // The storybook `args` need to be mapped into the template through the `setup()` method
+  setup() {
+    return { args };
+  },
+  // And then the `args` are bound to your component with `v-bind="args"`
+  template:
+    '<el-form><fed-amount-text-box v-bind="args" @FedAmountTextBox-onChange="onChange" @FedAmountTextBox-onBlur="onBlur" @FedAmountTextBox-onFocus="onFocus" @FedAmountTextBox-onKeyPress="onKeyPress" @FedAmountTextBox-onKeyUp="onKeyUp" /> </el-form>',
+  methods: {
+    onChange: action("onChange"),
+    onBlur: action("onBlur"),
+    onFocus: action("onFocus"),
+    onKeyPress: action("onKeyPress"),
+    onKeyUp: action("onKeyUp"),
+  },
+});
+
+export const Primary = Template.bind({});
+Primary.args = { name: "Fed" };
+
+Primary.storyName = "fed_amount_text_box";

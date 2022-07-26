@@ -1,0 +1,45 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { CollectionAccountTextBox } from './collection-account-text-box';
+
+# `Collection Account text box`
+ 
+Collection Account is a Text Box Component describing Deposit Account maintained by Borrower at Bank to which collections, deposits and other payments are done
+
+## Validation 
+- Field length is fixed 13
+- Field is numericSpecial
+- Field is masked as (“    -      -  - ”)
+
+## Attributes of Collection Account text box
+Below is the list of Attributes.
+<ArgsTable of={ CollectionAccountTextBox } /> 
+
+## Events Description
+
+### CollectionAccountTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### CollectionAccountTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### CollectionAccountTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### CollectionAccountTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### CollectionAccountTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="collectionaccounttextbox--primary" />
+</Canvas>
+
+ 

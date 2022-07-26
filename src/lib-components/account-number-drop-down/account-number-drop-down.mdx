@@ -1,0 +1,40 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { AccountNumberDropDown } from './account-number-drop-down';
+
+# `Account number drop down`
+
+This component is used to select `A/C No` and only display if isDisabled = true
+
+## Validation 
+- This field is mandatory
+
+## Attributes of Account number drop down
+Below is the list of Attributes.
+<ArgsTable of={ AccountNumberDropDown } /> 
+
+## Events Description
+
+### AccountNumberDropDown-onChange
+
+This event is used to get selected value from DropDown
+
+### AccountNumberDropDown-onClick
+
+This event is used to get value on click
+
+### AccountNumberDropDown-onBlur
+
+This event are not being used at the moment
+
+### AccountNumberDropDown-onFocus
+
+This event are not being used at the moment
+
+### Demo
+
+<Canvas>
+<Story id="accountnumberdropdown--primary" />
+</Canvas>
+
+ 

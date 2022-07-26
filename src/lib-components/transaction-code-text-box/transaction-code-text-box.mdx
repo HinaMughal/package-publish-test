@@ -1,0 +1,45 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { TransactionCodeTextBox } from './transaction-code-text-box';
+
+# `Transaction code text box`
+
+ 
+Transaction Codes is Text Box component which defines the set up level code proposed for each financial transaction entry
+
+## Validation 
+- Max length is 5
+- Field Should be numeric
+
+## Attributes of Transaction code text box
+Below is the list of Attributes.
+<ArgsTable of={ TransactionCodeTextBox } /> 
+
+## Events Description
+
+### TransactionCodeTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### TransactionCodeTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### TransactionCodeTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### TransactionCodeTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### TransactionCodeTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="transactioncodetextbox--primary" />
+</Canvas>
+
+ 

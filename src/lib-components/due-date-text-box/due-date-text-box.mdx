@@ -1,0 +1,50 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { DueDateTextBox } from './due-date-text-box';
+
+# `Due Date Text Box`
+
+Bill Due Date is a Date Component that defines the latest a payment can be made for bills before it's considered overdue
+
+## Validation 
+
+- Field length should not less then 8
+- Not contains (+ or -) 
+- Field should be numericSpecial
+- Field  is masked as (  /   /   )
+- Format(dd-mm-yyyy)
+- Should not be ((dd>31 || dd=0),(mm>12 || mm=0),(y=0)) 
+- If(yy%4) then second month (feb)dd should not be grater than 29
+
+## Attributes of Due Date text box
+Below is the list of Attributes.
+<ArgsTable of={ DueDateTextBox } /> 
+
+## Events Description
+Note:  `None of events will occur if component is disabled`
+### DueDateTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### DueDateTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### DueDateTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### DueDateTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### DueDateTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="duedatetextbox--primary" />
+</Canvas>
+
+ 

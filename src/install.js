@@ -1,4 +1,4 @@
-
+import Test from './lib-components/test/test.vue'
 import AccountNumberTextBox from "./lib-components/account-number-text-box/account-number-text-box.vue";
 import AccountNoTextBox from "./lib-components/account-number-text-box/account-number-text-box.vue";
 
@@ -530,6 +530,7 @@ function install(Vue) {
 		Vue.component("NicNumberTextBox",NicNumberTextBox);
 		Vue.component("ChargesWaiverTable",ChargesWaiverTable);
 		Vue.component("AuthorizationTable",AuthorizationTable);
+		Vue.component("Test",Test);
 	 
 
 
@@ -742,6 +743,7 @@ OutwardReferenceNumberDropDown.install = install;
 NicNumberTextBox.install = install;
 ChargesWaiverTable.install = install;
 AuthorizationTable.install = install;
+Test.install = install;
 
 
 
@@ -936,7 +938,7 @@ export {
 	OutwardReferenceNumberDropDown,
 	NicNumberTextBox,
 	ChargesWaiverTable,
-	AuthorizationTable
-
+	AuthorizationTable,
+	Test
 
 };

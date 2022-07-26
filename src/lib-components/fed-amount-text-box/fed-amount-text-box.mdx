@@ -1,0 +1,49 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { FedAmountTextBox } from "./fed-amount-text-box";
+
+# `Fed amount text box`
+
+This textbox is used to display FED Amount
+
+## Validation
+
+1. Field is Disabled.
+2. Data is added from DB.
+3. field is required.
+4. DataType is NumericDecimal.
+
+## Attributes of Fed amount text box
+
+Below is the list of Attributes.
+
+<ArgsTable of={FedAmountTextBox} />{" "}
+
+## Events Description
+
+### FedAmountTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### FedAmountTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### FedAmountTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### FedAmountTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### FedAmountTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+
+### Demo
+
+<Canvas>
+  <Story id="fedamounttextbox--primary" />
+</Canvas>

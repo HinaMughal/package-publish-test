@@ -1,0 +1,48 @@
+<!-- Custom-MDX-Documentation.mdx -->
+import { ArgsTable , Canvas , Meta ,Story } from "@storybook/addon-docs";
+import { LimitTextBox } from './limit-text-box';
+
+# `Limit text box`
+
+Limit is a text Box field that defines the amount limit for signature.
+
+## Validation 
+- Field is mandatory
+- Data is set in field from Thread message
+- Field is Disabled
+- Data in field is right aligned
+- Maximum Length is 12
+- Field is numeric
+
+## Attributes of Limit text box
+Below is the list of Attributes.
+<ArgsTable of={ LimitTextBox } /> 
+
+## Events Description
+
+### LimitTextBox-onChange
+
+The onChange event occurs when the user change in text box
+
+### LimitTextBox-onBlur
+
+The onBlur event occurs before focus lost.
+
+### LimitTextBox-onKeyPress
+
+The onkeypress event occurs when the user presses a key (on the keyboard).
+
+### LimitTextBox-onKeyUp
+
+The onkeypress event occurs when the user presses a up-arrow key (on the keyboard).
+
+### LimitTextBox-onFocus
+
+The onfocus event occurs when an element gets focus.The onfocus event is most often used with input and select.
+### Demo
+
+<Canvas>
+<Story id="limittextbox--primary" />
+</Canvas>
+
+ 
